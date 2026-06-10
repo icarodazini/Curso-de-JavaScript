@@ -1,3 +1,5 @@
+//Curso de JavaScript #14 - Eventos
+
 const submitButton = document.querySelector("#submit-button");
 const myForm = document.querySelector("#my-form");
 const nameInput = document.querySelector("#name");
