@@ -1,26 +1,24 @@
-//Curso de JavaScript #14 - Eventos
-
 const submitButton = document.querySelector("#submit-button");
-const myForm = document.querySelector("#my-form");
+const myForm = document.querySelector('#my-form');
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 
-const items = document.querySelector(".items");
-const body = document.querySelector("body");
+const items = document.querySelector('.items');
+const body = document.querySelector("body")
 
 submitButton.addEventListener("click", function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  const nameValue = nameInput.value;
-  const emailValue = emailInput.value;
+    const nameValue = nameInput.value;
+    const emailValue = emailInput.value;
 
-  if (nameValue === "" || emailValue === "") {
-    return alert("Please fill out all the fields!");
-  }
+    if (nameValue === "" || emailValue === "") {
+        return alert("Please fill out all the fields!");
+    }
 
-  myForm.style.background = "red";
-  items.firstElementChild.textContent = nameValue;
-  items.children[1].textContent = emailValue;
+    myForm.style.background = "red";
+    items.firstElementChild.textContent = nameValue;
+    items.children[1].textContent = emailValue;
 
-  body.style.background = "white";
+    body.style.background = "white";
 });
